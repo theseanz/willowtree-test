@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-profile-card',
@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angula
   styleUrls: ['./profile-card.component.scss'],
   host: {'(window:keydown)' : 'hotKeys($event)'}
 })
-export class ProfileCardComponent implements OnInit, OnDestroy{
+export class ProfileCardComponent implements OnInit{
   @Input() profile: any;
   @Input() index: number;
   @Input() showName: boolean;
