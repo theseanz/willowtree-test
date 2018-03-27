@@ -1,10 +1,14 @@
 .profile-card {
   max-width: 10em;
-}
 
-.profile-image-container {
-  height: 158px;
-  overflow: hidden;
+  .profile-image-container {
+    height: 158px;
+    overflow: hidden;
+  }
+
+  .card-footer {
+    height: 5em;
+  }
 }
 
 .answer-container {
@@ -22,7 +26,6 @@
     color: #721c24;
   }
 
-  .fa-check,
   .fa-times {
     font-size: 10em;
   }

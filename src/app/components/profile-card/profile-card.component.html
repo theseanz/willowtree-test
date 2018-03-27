@@ -3,14 +3,13 @@
     <div *ngIf="showName"
          class="answer-container text-center"
          [ngClass]="{'correct': showName && isCorrect, 'incorrect': showName && !isCorrect}">
-      <i fa class="fa fa-check" *ngIf="isCorrect"></i>
       <i fa class="fa fa-times" *ngIf="!isCorrect"></i>
     </div>
     <img class="card-img-top" [src]="profile.headshot.url" alt="Card image cap">
   </div>
   <div class="card-footer alert mb-0"
        [ngClass]="{'alert-success': showName && isCorrect, 'alert-danger': showName && !isCorrect}">
-    <p class="card-text text-center" *ngIf="!showName">Press {{ index + 1 }}</p>
-    <p class="card-text" *ngIf="showName">{{ profile.firstName }} {{ profile.lastName }}</p>
+    <p class="card-text text-center mt-3" *ngIf="!showName">Press {{ index + 1 }}</p>
+    <p class="card-text mt-2" *ngIf="showName">{{ profile.firstName }} {{ profile.lastName }}</p>
   </div>
 </div>
